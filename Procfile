@@ -1,1 +1,1 @@
-web : gunicorn esih.wsgi
+web: gunicorn esih.wsgi
