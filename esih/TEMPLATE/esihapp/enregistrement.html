@@ -1,0 +1,94 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}Creer vos codes cours{% endblock %}
+{% block content %}
+    <form method="post" action=""enctype="multipart/form-data">
+<fieldset>
+<legend>Code Cours</legend>
+</br>
+<TABLE BORDER=0>
+    <TR>
+	<TD>Programme</TD>
+	<TD>
+	<SELECT name="program" required="">
+        <option></option>
+    {% for prog in Prog_lister %}
+		<OPTION VALUE="{{prog.id}}">{{prog.Domaine}}-{{prog.Mention}}-{{prog.Specialite}}-{{prog.TypeCours}}-{{prog.Langue}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+        <td>
+            <a href="../programme/" class="addlink" id="ap" title="Cliquer pour Ajouter un Nouveau programme"></a>
+        </td>
+</TR>
+<TR>
+	<TD>Etablissement</TD>
+	<TD>
+	<SELECT name="Etablissement" required="">
+        <option></option>
+	{% for etab in ninstitut_lister %}
+		<OPTION VALUE="{{etab}}">{{etab}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+    <td>
+     <a href="../nouvi/" class="addlink" title="Cliquer pour Ajouter Nouvelle Institution"></a>
+    </td>
+</TR>
+
+<TR>
+	<TD>Grade</TD>
+	<TD>
+	<SELECT name="Grade" required="">
+          <option></option>
+	{% for grad in ngrade_lister %}
+		<OPTION VALUE="{{grad}}">{{grad}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+    <td>
+        <a href="../nouvg/"class="addlink" title="Cliquer pour Ajouter Nouveau Grade"></a>
+    </td>
+</TR>
+
+<TR>
+	<TD>Semestre</TD>
+	<TD>
+	<SELECT name="Semestre" required="">
+          <option></option>
+	{% for sem , cle in Sem.items %}
+		<OPTION VALUE="{{sem}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Nom du Cours</TD>
+	<TD>
+	<SELECT name="NomCours" required="">
+          <option></option>
+	{% for ncour in nnonCours_lister %}
+		<OPTION VALUE="{{ncour}}">{{ncour}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+    <td>
+        <a href="../nouvc/" class="addlink" title="Cliquer pour Ajouter Nouveau Cours"></a>
+    </td>
+</TR>
+<TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Valider">
+	</TD>
+</TR>
+</TABLE>
+
+</fieldset>
+</form>
+
+{% endblock %}
+</body>
+</html>
+
+
+

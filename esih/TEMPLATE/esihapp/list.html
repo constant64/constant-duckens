@@ -1,0 +1,45 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}list code cours{% endblock %}
+{% block content %}
+<body>
+</br>
+</br>
+<form method="post" action=""
+enctype="multipart/form-data">
+    <fieldset>
+    <legend>Liste des codes cours</legend>
+    </br>
+    </br>
+        <table width="1100" border="3" style="">
+  <tr  style=" background:#F90" border="" >
+    <td>ID</td>
+    <td>Etablissement</td>
+    <td>Grade</td>
+    <td>Semestre</td>
+    <td>Cours</td>
+    <td>Code Cours</td>
+    <td>Programme</td>
+    <td>Auteur</td>
+    <td>Modifier</td>
+    <td>Suprimer</td>
+  </tr>
+            {% for cours in Code_cour_lister %}
+  <tr style="background:#417690;color:white">
+      <td>{{cours.id}}</td>
+    <td>{{cours.Etablissement}}</td>
+    <td> {{cours.Grade}}</td>
+    <td> {{cours.Semestre}}</td>
+    <td>{{cours.NomCours}}</td>
+    <td>{{cours.Etablissement}}-{{cours.Grade}}{{cours.Semestre}}-{{cours.NomCours}}</td>
+    <td>{{cours.program.Domaine}}-{{cours.program.Mention}}-{{cours.program.Specialite}}-{{cours.program.TypeCours}}-{{cours.program.Langue}}</td>
+    <td>&nbsp;</td>
+    <td><a href="../modc/{{cours.id}}/" class="edlink" title="Cliquer pour modifier le code"></a></td>
+    <td><a href="../supc/{{cours.id}}/"  class="rmlink" title="Cliquer pour suprimer le code"></a></td>
+  </tr>
+            {% endfor %}
+</table>
+    </fieldset>
+    </form>
+</body>
+{% endblock %}
+

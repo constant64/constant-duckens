@@ -1,0 +1,119 @@
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<title>Codage</title>
+
+<body>
+
+<!--p>Code Cours</p-->
+</br>
+</br>
+</br>
+<form method="post" action=""
+enctype="multipart/form-data">
+<fieldset>
+<legend>Decrire le Cours</legend>
+</br>
+<TABLE BORDER=0>
+    <TR>
+	<TD>Professeur</TD>
+	<TD>
+	<SELECT name="NomProfesseur" required="">
+    <option></option>
+	{% for prof in d.professeurs %}
+    <OPTION VALUE="{{prof.id}}">{{prof}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD>Code Cours</TD>
+	<TD>
+	<SELECT name="CodeCours" required="">
+    <option></option>
+	{% for cours in Code_cour_lister %}
+    <OPTION VALUE="{{cours.id}}">{{cours.Etablissement}}-{{cours.Grade}}-{{cours.Semestre}}-{{cours.NomCours}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>NomCours</TD>
+	<TD>
+	<SELECT name="NomCours" required="">
+          <option></option>
+    {% for cours in Code_cour_lister %}
+		<OPTION VALUE="{{cours.NomCours}}">{{cours.NomCours}}</OPTION>
+    {% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Credi Ects</TD>
+	<TD>
+	<SELECT name="CrediEcts" required="">
+     <option></option>
+	{% for cre  in  Cred %}
+		<OPTION VALUE="{{cre}}">{{cre}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD> Etablissement</TD>
+	<TD>
+	<SELECT name="Etablissement" required="">
+          <option></option>
+	{% for cours in Code_cour_lister %}
+		<OPTION VALUE="{{cours.id}}">{{cours.Etablissement}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+<TR>
+	<TD>Public cible</TD>
+	<TD>
+	<SELECT name="PublicCible" required="">
+    <option></option>
+	{% for public in  Pub %}
+    <OPTION VALUE="{{public}}">{{public}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+</TR>
+    <label for="pseudo">PreRequis :</label><textarea name="PreRequis" rows='2' cols="20"></textarea>
+    <!--input type="text" name="PreRequis" id="dom" placeholder="Ex: ECG" /!-->
+<br />
+       <label for="pseudo">Objectif :</label><textarea name="Objectif" rows='2' cols="20"></textarea>
+    <!--input type="text" name="Objectif" id="dom" placeholder="Ex: ECG" /-->
+<br />
+       <label for="pseudo">Description :</label>
+    <input type="text" name="Description" id="dom" placeholder="Ex: ECG" />
+<br />
+       <label for="pseudo">PlanCours :</label>
+    <input type="text" name="PlanCours" id="dom" placeholder="Ex: ECG" />
+<br />
+       <label for="pseudo">Format :</label>
+    <input type="text" name="Format" id="dom" placeholder="Ex: ECG" />
+<br />
+       <label for="pseudo">Ressource :</label>
+    <input type="text" name="Ressource" id="dom" placeholder="Ex: ECG" />
+<br />
+       <label for="pseudo">Evalution :</label>
+    <input type="text" name="Evalution" id="dom" placeholder="Ex: ECG" />
+<br />
+<a href="../prof/">CV Prof</a>
+</TABLE>
+<TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Valider">
+	</TD>
+</TR>
+</br>
+</br>
+</br>
+</fieldset>
+</body>
+</html>

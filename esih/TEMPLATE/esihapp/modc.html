@@ -1,0 +1,88 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}Modifier code cours{% endblock %}
+{% block content %}
+
+
+<body>
+
+
+</br>
+</br>
+</br>
+<form method="post" action="" enctype="multipart/form-data">
+<fieldset>
+<legend>Modifier le code du Cours</legend>
+</br>
+<TABLE BORDER=0>
+<TR>
+	<TD>Programme</TD>
+	<TD>
+	<SELECT name="program" required="">
+        <option value="{{Code_cour_listerM.program.id}}" >{{Code_cour_listerM.program.Domaine}}-{{Code_cour_listerM.program.Mention}}-{{Code_cour_listerM.program.Specialite}}-{{Code_cour_listerM.program.TypeCours}}-{{Code_cour_listerM.program.Langue}}</option>
+    {% for prog in Prog_lister %}
+		<OPTION VALUE="{{prog.id}}">{{prog.Domaine}}-{{prog.Mention}}-{{prog.Specialite}}-{{prog.TypeCours}}-{{prog.Langue}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+    <TR>
+	<TD>Etablissement</TD>
+	<TD>
+	<SELECT name="Etablissement" required="">
+   <option>{{Code_cour_listerM.Etablissement}}</option>
+	{% for etab in ninstitut_lister %}
+		<OPTION VALUE="{{etab}}">{{etab}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Grade</TD>
+	<TD>
+	<SELECT name="Grade" required="">
+          <option>{{Code_cour_listerM.Grade}}</option>
+	{% for grad in ngrade_lister %}
+		<OPTION VALUE="{{grad}}">{{grad}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Semestre</TD>
+	<TD>
+	<SELECT name="Semestre" required="">
+          <option>{{Code_cour_listerM.Semestre}}</option>
+	{% for sem , cle in Sem.items %}
+		<OPTION VALUE="{{sem}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Nom du Cours</TD>
+	<TD>
+	<SELECT name="NomCours" required="">
+          <option>{{Code_cour_listerM.NomCours}}</option>
+	{% for ncour in nnonCours_lister %}
+		<OPTION VALUE="{{ncour}}">{{ncour}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+</TABLE>
+<TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Valider">
+	</TD>
+</TR>
+</br>
+</br>
+</br>
+</fieldset>
+    </form>
+</body>
+{% endblock %}

@@ -1,0 +1,118 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}CV Professeur{% endblock %}
+{% block content %}
+<body>
+<form method="post" action="" 
+enctype="multipart/form-data">
+<fieldset>
+<legend>Creer un CV</legend>
+
+	<h3>Professeur: <label>{{professeurs}}</label></h3>
+	<input type="hidden" name="professeurs" value="{{professeurs}}">
+
+</br>
+</br>
+<label for="pseudo">Nom    :</label>
+<input type="text" name="Nom" id="dom"  value="{{professeurs.NomProfesseur}}" readonly/>
+<br />
+<br />
+<label for="pass">Prenom :</label>
+<input type="text" name="Prenom" id="Ment" value="{{professeurs.PrenomProfesseur}}" readonly/>
+<br />
+<br />
+<label for="pass">Date de Naissance    :</label>
+<input type="date" name="DateN" id="sem" placeholder="Ex: 28/12/90" required="" />
+<br />
+<br />
+<label for="pass">Lieu de Naissance    :</label>
+<input type="text" name="LieuN" id="nom" placeholder="Ex: verrettes" required="" />
+<br />
+<br />
+<label for="pass">Tel1   :</label>
+<input type="tel" name="Tel1" id="nom"  value="{{professeurs.Tel}}" readonly/>
+<br />
+<br />
+<label for="pass">Tel2   :</label>
+<input type="tel" name="Tel2" id="nom" placeholder="Ex:37501305" required="" />
+<br />
+<br />
+<label for="pseudo">Adresse    :</label>
+<input type="text" name="Adresse" id="dom"  value="{{professeurs.Adresse}}" readonly/>
+<br />
+<br />
+<label for="pass">Email :</label>
+<input type="email" name="Email" id="Ment"  value="{{professeurs.Email}}" readonly/ >
+<br />
+<br />
+<label for="pass">CIN/NIF   :</label>
+<input type="text" name="CIN" id="sem"  value="{{professeurs.CINP}}" readonly/>
+<br />
+<br />
+<TR>
+	<TD>Etat Civil</TD>
+	<TD>
+	<SELECT name="EtatC" required="">
+	{% for etab in etat %}
+		<OPTION VALUE="{{etab}}">{{etab}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+<br />
+<br />
+<label for="pass">Experience Professionnelle   :</label>
+<input type="text" name="ExpP" id="nom" placeholder="Ex: Ingenieur" required="" />
+<br />
+<br />
+<label for="pass">Date Experience   :</label>
+<input type="date" name="DateE" id="nom" placeholder="2012" required="" />
+<br />
+<br />
+<label for="pseudo">Formation Academique    :</label>
+<input type="text" name="FormationA" id="dom" placeholder="Ex: Esih" required="" />
+<br />
+<br />
+<label for="pass">Date Formation :</label>
+<input type="date" name="DateF" id="Ment" placeholder="Ex: 2009" required="" />
+<br />
+<br />
+<label for="pass">Specialite    :</label>
+<input type="text" name="Specialite" id="sem" placeholder="Ex: Reseuax" required="" />
+<br />
+<br />
+<label for="pass">Reference     :</label>
+<input type="text" name="Reference" id="nom" placeholder="Ex: Lys Junior" required="" />
+<br />
+<br />
+<label for="pass">Langue   :</label>
+<input type="text" name="Langue" id="nom" placeholder="Ex: Creole" required="" />
+<br />
+<br />
+    <TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Valider">
+	</TD>
+</TR>
+</TABLE>
+</fieldset>
+    </form>
+</body>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

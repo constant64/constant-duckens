@@ -1,0 +1,99 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}Creer code Programme{% endblock %}
+{% block content %}
+<body>
+<form method="post" action="" 
+enctype="multipart/form-data">
+<fieldset>
+<legend>Programme Cours</legend>
+
+<TABLE BORDER=0>
+<TR>
+	<TD>Domaine</TD>
+	<TD>
+	<SELECT name="Domaine" required="">
+	<option>{{Prog_listerM.Domaine}}</option>
+	{% for dom , cle in Dom.items %}
+		<OPTION VALUE="{{dom}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+    
+	<TD>Mention</TD>
+	<TD>
+	<SELECT name="Mention" required="">
+	<option>{{Prog_listerM.Mention}}</option>
+	{% for ment , cle in Ment.items %}
+		<OPTION VALUE="{{ment}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Specialite</TD>
+	<TD>
+	<SELECT name="Specialite" required="">
+	<option>{{Prog_listerM.Specialite}}</option>
+	{% for spec , cle in Spec.items %}
+		<OPTION VALUE="{{spec}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Type Cours</TD>
+	<TD>
+	<SELECT name="Typecours" required="">
+	<option>{{Prog_listerM.TypeCours}}</option>
+	{% for tcour , cle in Tcour.items %}
+		<OPTION VALUE="{{tcour}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Langue</TD>
+	<TD>
+	<SELECT name="Langue" required="">
+	<option>{{Prog_listerM.Langue}}</option>
+	{% for lang , cle in Lang.items %}
+		<OPTION VALUE="{{lang}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+    <TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Valider">
+	</TD>
+</TR>
+</TABLE>
+<a href="../codage/" title="Cliquer pour creer un code cours">Aller vers creer code cours</a>
+</fieldset>
+ </form>
+</body>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

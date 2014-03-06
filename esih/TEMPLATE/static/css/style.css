@@ -1,0 +1,171 @@
+{% load staticfiles %}
+
+/* Common
+body {
+	background:#eaeaea url(bg.png) repeat;
+	font-size:12px;
+	font-family:"Arial", serif;
+width:1000px;
+text-decoration:normal;
+	margin:auto;
+	padding:0;
+	color:#aaa;
+}
+*/
+
+body {
+    margin: auto;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    color: #333;
+    background: #fff;
+    width:1150px;
+}
+
+
+/* menu principal */
+#menu a
+{
+
+display:inline-block;
+color: #F90;
+text-decoration:none;
+font-size:1.5em;
+text-align:center;
+font-family:"Arial", serif;
+}  
+#menu > li,  
+#menu > li li {  
+    position: relative;
+    display:inline-block;
+    width: 110px;
+    padding: 10px 15px;
+    background-color: #777;  
+    background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
+	background-image: -ms-linear-gradient(#aaa, #888 50%, #777 50%,#999);
+}  
+#menu > li li { background: transparent none; }
+#menu > li li a { color: #444; }
+#menu > li li:hover { background:#eee; }  
+#menu > li:first-child {  
+    border-right: 1px solid #777;
+    border-radius: 8px 0 0 8px;  
+}  
+#menu > li + li {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #777;
+}  
+#menu > li:last-child {  
+    border-right:0px ;
+    border-left: 1px solid #aaa;  
+    border-radius: 0 8px 8px 0 ;  
+}  
+#menu > li:hover {  
+    background-color: #999;  
+    background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);  
+	background-image: -ms-linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb); 
+}  
+/* (presque) fin de la partie positionnement/déco */  
+/* deroulante lan */
+#menu ul {  
+    position: absolute;  
+    top: 2em; left:0;
+    max-height:0em;
+    margin:0; padding:0;
+    background-color:#ddd;  
+    background-image: linear-gradient(#fff,#ddd);  
+	background-image: -ms-plinear-gradient(#fff,#ddd);
+    overflow:hidden;  
+    transition: 1s max-height 0.3s;
+    border-radius: 0 0 8px 8px; 
+
+}  
+
+/* ici on change la valeur de max-height au :hover */  
+#menu > li:hover ul {  
+    /* need an adaptation, lower is better, but see it large   */  
+    max-height:13em;
+} 
+
+	
+figure { 
+	display: inline-block;
+}
+
+
+.sread {
+	position: absolute;
+	left:-9999px;
+}
+.cursive {
+	font-family: 'Mr Dafoe', cursive;
+}
+.center {
+	text-align: center;
+}
+
+#content /*Div page*/
+{
+background:white;
+width:1150px;
+height:200px;
+margin:auto;
+margin-top:-2px;
+left:137px;
+
+}
+
+#menu
+{
+margin:auto;
+margin-top:0px;
+left:137px;
+}
+
+
+
+#tout  /*boite noir*/
+{
+border:1px solid #eaeaea;
+width:1150px;
+height:100px;
+margin:auto;
+background: #417690;
+}
+
+#toto{
+margin-left:900px;
+margin-top:-30px;
+font-size: 12px;
+font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+color:white;
+}
+
+
+.addlink {
+    padding-left: 25px;
+    padding-bottom:25px;
+    background: url(../image/p8.png) 0 .1em no-repeat;
+}
+.edlink {
+    padding-left: 50px;
+
+    background: url(../image/mod.gif) 0 .2em no-repeat;
+}
+.rmlink {
+    padding-left: 12px;
+
+    background: url(../image/del.gif) 0 .25em no-repeat;
+}
+.link {
+    padding-left: 12px;
+
+    background: url(../image/p11.png) 0 .25em no-repeat;
+}
+.dlink {
+    padding-left: 12px;
+
+    background: url(../image/p3.png) 0 .25em no-repeat;
+}
+

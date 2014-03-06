@@ -1,0 +1,29 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}list code programme{% endblock %}
+{% block content %}
+<body>
+</br>
+</br>
+<form method="post" action=""
+enctype="multipart/form-data">
+    <fieldset>
+        <legend>Liste des codes Programmes</legend>
+        <p>Voici vos codes</p>
+        </br>
+        </br>
+        {% for program in Prog_lister %}
+        {{"--->"}}
+        {{program.Domaine}}-{{program.Mention}}-{{program.Specialite}}-{{program.TypeCours}}-{{program.Langue}}
+        <a href="../modp/{{program.id}}/">Modifier</a>{{" "}}
+        <a href="../supp/{{program.id}}/">Suprimer</a>
+        <a href="../programme/">Ajouter</a>
+        </br>
+        {% endfor %}
+        </br>
+        </br>
+</TR>
+    </fieldset>
+    </form>
+</body>
+{% endblock %}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Enregistrement d'un Cours</title>
+</head>
+<body>
+<FORM method="post" action="">
+Enregistrer un Cours
+<TABLE BORDER=0>
+
+<TR>
+	<TD>Etablissement</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for etab in Etab %}
+		<OPTION VALUE="{{etab}}">{{etab}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Grade</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for grad in Grad %}
+		<OPTION VALUE="{{grad}}">{{grad}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Semestre</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for sem , cle in Sem.items %}
+		<OPTION VALUE="{{sem}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Nom du Cours</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for ncour in Ncour%}
+		<OPTION VALUE="{{ncour}}">{{ncour}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD>Domaine</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for dom , cle in Dom.items %}
+		<OPTION VALUE="{{dom}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+    
+	<TD>Mention</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for ment , cle in Ment.items %}
+		<OPTION VALUE="{{ment}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Specialite</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for spec , cle in Spec.items %}
+		<OPTION VALUE="{{codes}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+<TR>
+	<TD>Type Cours</TD>
+	<TD>
+	<SELECT name="fonction">
+	{% for tcour , cle in Tcour.items %}
+		<OPTION VALUE="{{tcour}}">{{cle}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+
+</TABLE>
+<TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Save">
+	</TD>
+</TR>
+
+<footer id='foot'>© Crêpes bretonnes</footer>
+</body>
+</html>
+

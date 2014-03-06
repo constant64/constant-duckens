@@ -36,12 +36,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'esihapp',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -50,15 +51,23 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'esih.urls'
 
 WSGI_APPLICATION = 'esih.wsgi.application'
-
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'TEMPLATE').replace('\\','/'),
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'esih',
+        'USER': 'tiko',
+        'PASSWORD': 'toto',
+        'HOST': 'localhost',
+        #'PORT': '5432'
     }
 }
 
@@ -80,7 +89,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+##STATICFILES_DIRS = ("C:\Users\vip\django\static",)
+
+APPEND_SLASH = 'TRUE' #AJOUTE UN SLASH EN FIN D'URL
+
 # Parse database configuration from $DATABASE_URL
+
+#NB:a decommenter pour mettre oneline
 import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
 
@@ -98,4 +113,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+    "esih/TEMPLATE/static",
 )
+

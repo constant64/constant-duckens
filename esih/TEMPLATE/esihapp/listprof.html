@@ -1,0 +1,45 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}liste des Professeurs{% endblock %}
+{% block content %}
+<body>
+</br>
+</br>
+<form method="post" action=""
+enctype="multipart/form-data">
+    <fieldset>
+    <legend>Liste des Professeurs</legend>
+    </br>
+    </br>
+
+         <table width="1100" border="3" style="">
+  <tr  style=" background:#F90" border="" >
+    <td>ID</td>
+    <td>Nom</td>
+    <td>Prenom</td>
+    <td>Tel</td>
+    <td>Email</td>
+    <td>CIN/NIF</td>
+    <td>Lien vers CV</td>
+    <td>Auteur</td>
+    <td>Modifier Prof</td>
+    <td>Suprimer Prof</td>
+  </tr>
+    {% for prof in allprofesseurs %}
+   <tr style="background:#417690;color:white">
+    <td>{{prof.id}}</td>
+    <td>{{prof.NomProfesseur}}</td>
+    <td> {{prof.PrenomProfesseur}}</td>
+    <td> {{prof.Tel}}</td>
+    <td>{{prof.Email}}</td>
+    <td>{{prof.CINP}}</td>
+    <td><a href="../cv/{{prof.id}}/"  class="link" title="Cliquer pour acceder au Cv du prof"></a></td>
+    <td>&nbsp;</td>
+    <td><a href="../modprof/{{prof.id}}/" class="edlink" title="Cliquer pour modifier le code"></a></td>
+    <td><a href="../supprof/{{prof.id}}/"  class="rmlink" title="Cliquer pour suprimer le code"></a></td>
+  </tr>
+             {% endfor %}
+</table>
+    </fieldset>
+    </form>
+</body>
+{% endblock %}
