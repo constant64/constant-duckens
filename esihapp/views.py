@@ -314,17 +314,17 @@ def create(request):
 
 def login(request):
     try:
-        try:
-            log_in = admin.objects.get(username=request.POST['username'])
-            log =admin.objects.get(password=request.POST['password'])
-            if log.password == request.POST['password'] and log_in.username==request.POST['username']:
-                request.session['member_id'] = log_in.id
+# try:
+        log_in = admin.objects.get(username=request.POST['username'])
+        log =admin.objects.get(password=request.POST['password'])
+        if log.password == request.POST['password'] and log_in.username==request.POST['username']:
+            request.session['member_id'] = log_in.id
 
-                return redirect('/../')
-            else:
-                return render(request,'esihapp/formerno.html',locals())
-        except:
-            return render(request,'esihapp/form.html',locals())
+            return redirect('/../')
+        else:
+            return render(request,'esihapp/formerno.html',locals())
+# except:
+# return render(request,'esihapp/form.html',locals())
 
     except KeyError:
         return render(request,'esihapp/form.html',locals())
