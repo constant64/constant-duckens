@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="216ee206-3d04-4a50-a9dc-f96a26a578e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esihapp/views.py" afterPath="$PROJECT_DIR$/esihapp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +64,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/esihapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="4" selection-start="2744" selection-end="2744" vertical-scroll-proportion="0.45540798" vertical-offset="729" max-vertical-offset="6324">
+            <state line="68" column="41" selection-start="3493" selection-end="3493" vertical-scroll-proportion="0.8102467" vertical-offset="729" max-vertical-offset="6324">
               <folding>
                 <element signature="e#23#68#0" expanded="true" />
               </folding>
@@ -438,7 +437,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07640068" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
@@ -565,7 +564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/esihapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="4" selection-start="2744" selection-end="2744" vertical-scroll-proportion="0.45540798" vertical-offset="729" max-vertical-offset="6324">
+        <state line="68" column="41" selection-start="3493" selection-end="3493" vertical-scroll-proportion="0.8102467" vertical-offset="729" max-vertical-offset="6324">
           <folding>
             <element signature="e#23#68#0" expanded="true" />
           </folding>

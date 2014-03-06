@@ -66,7 +66,7 @@ def Prog(request):
                 'Sde': "Sciences de l'entreprise", 'SC': 'Sciences Comptables', 'NOSP': 'Aucune'}
         Tcour = {'O': 'Optionnel', 'OB': 'Obligatoire'}
         Lang = {'A': 'Anglais', 'F': 'Francais'}
-        return render(request, 'esihapp/programme.html', locals())
+        return render(request, 'esihapp/Programme.html', locals())
 
 
 def prof(request):
