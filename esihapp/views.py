@@ -58,7 +58,7 @@ def Prog(request):
                 'Sde': "Sciences de l'entreprise", 'SC': 'Sciences Comptables', 'NOSP': 'Aucune'}
         Tcour = {'O': 'Optionnel', 'OB': 'Obligatoire'}
         Lang = {'A': 'Anglais', 'F': 'Francais'}
-        return redirect("/../Programme/")
+        return redirect("/../programme/")
     except KeyError:
         Dom = {'ST': 'Sciences et technologies', 'E&G': 'Economie ET Gestion'}
         Ment = {'SI': 'Sciences informatiques', 'E&G': 'Economie ET Gestion'}
