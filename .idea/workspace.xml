@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216ee206-3d04-4a50-a9dc-f96a26a578e2" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\vip\django\forcebrute.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esihapp/views.py" afterPath="$PROJECT_DIR$/esihapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esihapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="0" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.0" vertical-offset="1222" max-vertical-offset="1785">
+            <state line="98" column="0" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.0" vertical-offset="1205" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -47,25 +47,25 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esih/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="22" selection-start="2485" selection-end="2485" vertical-scroll-proportion="-5.84" vertical-offset="1520" max-vertical-offset="2108">
+            <state line="97" column="22" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2108">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esih/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="540">
+            <state line="19" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/esihapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="316" column="6" selection-start="13544" selection-end="13544" vertical-scroll-proportion="-4.56" vertical-offset="5224" max-vertical-offset="6307">
+            <state line="322" column="29" selection-start="13855" selection-end="13855" vertical-scroll-proportion="0.6574074" vertical-offset="5085" max-vertical-offset="6324">
               <folding />
             </state>
           </provider>
@@ -121,9 +121,9 @@
         <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html" />
         <option value="$PROJECT_DIR$/esih/TEMPLATE/static/css/style.css" />
         <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html" />
-        <option value="$PROJECT_DIR$/esihapp/views.py" />
         <option value="$PROJECT_DIR$/esih/wsgi.py" />
         <option value="$PROJECT_DIR$/esih/settings.py" />
+        <option value="$PROJECT_DIR$/esihapp/views.py" />
       </list>
     </option>
   </component>
@@ -304,8 +304,8 @@
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="C:/Python27" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -524,9 +524,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1816828" sideWeight="0.67005074" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -590,7 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/esihapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="1785">
+        <state line="98" column="0" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.0" vertical-offset="1205" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
@@ -616,23 +616,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/esihapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="316" column="6" selection-start="13544" selection-end="13544" vertical-scroll-proportion="-4.56" vertical-offset="5224" max-vertical-offset="6307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/esih/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="22" selection-start="2485" selection-end="2485" vertical-scroll-proportion="-5.84" vertical-offset="1520" max-vertical-offset="2108">
+        <state line="97" column="22" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2108">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/esih/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="540">
+        <state line="19" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esihapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="322" column="29" selection-start="13855" selection-end="13855" vertical-scroll-proportion="0.6574074" vertical-offset="5085" max-vertical-offset="6324">
           <folding />
         </state>
       </provider>
