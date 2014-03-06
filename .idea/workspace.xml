@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="216ee206-3d04-4a50-a9dc-f96a26a578e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esihapp/views.py" afterPath="$PROJECT_DIR$/esihapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +56,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/esihapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="324" column="36" selection-start="13957" selection-end="13957" vertical-scroll-proportion="0.70018977" vertical-offset="5139" max-vertical-offset="6324">
+            <state line="324" column="30" selection-start="13951" selection-end="13951" vertical-scroll-proportion="0.70018977" vertical-offset="5139" max-vertical-offset="6324">
               <folding>
                 <element signature="e#23#68#0" expanded="true" />
               </folding>
@@ -605,7 +606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/esihapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="324" column="36" selection-start="13957" selection-end="13957" vertical-scroll-proportion="0.70018977" vertical-offset="5139" max-vertical-offset="6324">
+        <state line="324" column="30" selection-start="13951" selection-end="13951" vertical-scroll-proportion="0.70018977" vertical-offset="5139" max-vertical-offset="6324">
           <folding>
             <element signature="e#23#68#0" expanded="true" />
           </folding>
