@@ -257,23 +257,23 @@ def CVP (request, id):
         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
         return render(request,'esihapp/cv.html',locals())
 
-def CVP (request, id):
-    if 'member_id' not in request.session:
-        return redirect("/login/")
-    try:
-        professeurs = Professeurs.objects.get(id=id)
-        cvp = CV ( DateN=request.POST['DateN'],professeurs=professeurs,
-                   LieuN=request.POST['LieuN'],Tel2=request.POST['Tel2'],
-                    EtatC=request.POST['EtatC'],ExpP=request.POST['ExpP'],
-                    DateE=request.POST['DateE'],FormationA=request.POST['FormationA'],DateF=request.POST['DateF'],
-                   Specialite=request.POST['Specialite'],Reference=request.POST['Reference'],Langue=request.POST['Langue'])
-        cvp.save()
-        etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
-        return redirect("/../listprof/")
-
-    except KeyError:
-        etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
-        return render(request,'esihapp/cv.html',locals())
+# def CVP (request, id):
+#     if 'member_id' not in request.session:
+#         return redirect("/login/")
+#     try:
+#         professeurs = Professeurs.objects.get(id=id)
+#         cvp = CV ( DateN=request.POST['DateN'],professeurs=professeurs,
+#                    LieuN=request.POST['LieuN'],Tel2=request.POST['Tel2'],
+#                     EtatC=request.POST['EtatC'],ExpP=request.POST['ExpP'],
+#                     DateE=request.POST['DateE'],FormationA=request.POST['FormationA'],DateF=request.POST['DateF'],
+#                    Specialite=request.POST['Specialite'],Reference=request.POST['Reference'],Langue=request.POST['Langue'])
+#         cvp.save()
+#         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
+#         return redirect("/../listprof/")
+#
+#     except KeyError:
+#         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
+#         return render(request,'esihapp/cv.html',locals())
 
 def listerprof(request):
     """fonction permettant de lister un cours"""
@@ -314,13 +314,10 @@ def create(request):
 
 def login(request):
     try:
-# try:m = Member.objects.get(username=request.POST['username'])
-#if m.password == request.POST['password']:
         log_in = admin.objects.get(username=request.POST['username'])
         if log_in.password == request.POST['password']:
             request.session['member_id'] = log_in.id
-
-            return redirect('../')
+            return redirect('/../')
         else:
             return render(request,'esihapp/formerno.html',locals())
 # except:
