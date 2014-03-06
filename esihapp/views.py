@@ -314,14 +314,15 @@ def create(request):
 
 def login(request):
     try:
-        log_in = admin.objects.get(username=request.POST['username'])
-        if log_in.password == request.POST['password']:
-            request.session['member_id'] = log_in.id
-            return redirect('/../')
-        else:
-            return render(request,'esihapp/formerno.html',locals())
-# except:
-# return render(request,'esihapp/form.html',locals())
+        try:
+            log_in = admin.objects.get(username=request.POST['username'])
+            if log_in.password == request.POST['password']:
+                request.session['member_id'] = log_in.id
+                return redirect('/../')
+            else:
+                return render(request,'esihapp/formerno.html',locals())
+        except:
+             return render(request,'esihapp/form.html',locals())
 
     except KeyError:
         return render(request,'esihapp/form.html',locals())
