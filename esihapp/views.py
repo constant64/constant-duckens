@@ -316,8 +316,7 @@ def login(request):
     try:
 # try:
         log_in = admin.objects.get(username=request.POST['username'])
-        log =admin.objects.get(password=request.POST['password'])
-        if log.password == request.POST['password'] and log_in.username==request.POST['username']:
+        if log_in.password == request.POST['password']:
             request.session['member_id'] = log_in.id
 
             return redirect('/../')
