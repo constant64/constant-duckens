@@ -322,7 +322,7 @@ def login(request):
             else:
                 return render(request,'esihapp/formerno.html',locals())
         except:
-             return redirect('../')
+             return render(request,'esihapp/formerno.html',locals())
 
     except KeyError:
         return render(request,'esihapp/form.html',locals())
