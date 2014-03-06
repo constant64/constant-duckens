@@ -85,8 +85,7 @@ class admin (models.Model):
     lastname = models.CharField(max_length=30)
     email = models.CharField(max_length=30)
     password = models.CharField(max_length=128)
-    type = models.BooleanField(default=False)
-    isactive = models.BooleanField(default=True)
+    
 
     def __unicode__(self):
         return u'%s %s' % (self.username,self.firstname)
