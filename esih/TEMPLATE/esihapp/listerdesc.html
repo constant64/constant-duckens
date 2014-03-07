@@ -36,6 +36,38 @@ enctype="multipart/form-data">
             {% endfor %}
 </table>
     </fieldset>
+
+
+
+
+
+    <fieldset>
+               <table width="1100"  border="3" style="">
+  <tr  style=" background:#F90" border="" >
+    <td>ID</td>
+    <td>CodeCours</td>
+    <td>professeurs</td>
+    <td>NomCours</td>
+    <td>CrediEcts</td>
+    <td> Etablissement</td>
+    <td>PublicCible</td>
+    <td>Action</td>
+  </tr>
+            {% for desc in desc_lister %}
+  <tr style="background:#417690;color:white">
+    <td>{{desc.id}}</td>
+    <td>{{desc.cours.Etablissement}}-{{desc.cours.Grade}}-{{desc.cours.Semestre}}-{{desc.cours.NomCours}}</td>
+    <td> {{desc.cours.allprofesseurs}}</td>
+    <td> {{desc.NomCours}}</td>
+    <td>{{desc.CrediEcts}}</td>
+    <td>{{desc.cours.Etablissement}}</td>
+    <td>{{desc.PublicCible}}</td>
+    <td><a href="../modc/{{cours.id}}/" class="edlink" title="Cliquer pour modifier le code"></a><a href="../supc/{{cours.id}}/"  class="rmlink" title="Cliquer pour suprimer le code"></a></a><a href="../supc/{{cours.id}}/"  class="dlink" title="Cliquer pour Detailler la Description "></a></td>
+
+  </tr>
+            {% endfor %}
+</table>
+     </fieldset>
     </form>
 </body>
 {% endblock %}

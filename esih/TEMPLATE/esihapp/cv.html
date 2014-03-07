@@ -5,6 +5,7 @@
 <form method="post" action="" 
 enctype="multipart/form-data">
 <fieldset>
+    <nav id="design_g">
 <legend>Creer un CV</legend>
 
 	<h3>Professeur: <label>{{professeurs}}</label></h3>
@@ -13,45 +14,46 @@ enctype="multipart/form-data">
 </br>
 </br>
 <label for="pseudo">Nom    :</label>
-<input type="text" name="Nom" id="dom"  value="{{professeurs.NomProfesseur}}" readonly/>
+<input type="text" name="Nom" id="dom"  value="{{professeurs.NomProfesseur}}"required="" />
 <br />
 <br />
 <label for="pass">Prenom :</label>
-<input type="text" name="Prenom" id="Ment" value="{{professeurs.PrenomProfesseur}}" readonly/>
+<input type="text" name="Prenom" id="Ment" value="{{professeurs.PrenomProfesseur}}" required=""/>
 <br />
 <br />
 <label for="pass">Date de Naissance    :</label>
-<input type="date" name="DateN" id="sem" placeholder="Ex: 28/12/90" required="" />
+<input type="date" name="DateN" id="sem"  value="{{cvp.DateN}}" placeholder="Ex: 28/12/90" required=""  />
 <br />
 <br />
 <label for="pass">Lieu de Naissance    :</label>
-<input type="text" name="LieuN" id="nom" placeholder="Ex: verrettes" required="" />
+<input type="text" name="LieuN" id="nom" placeholder="Ex: verrettes" value="{{cvp.LieuN}}" required="" />
 <br />
 <br />
 <label for="pass">Tel1   :</label>
-<input type="tel" name="Tel1" id="nom"  value="{{professeurs.Tel}}" readonly/>
+<input type="tel" name="Tel1" id="nom"  value="{{professeurs.Tel}}" required=""/>
 <br />
 <br />
 <label for="pass">Tel2   :</label>
-<input type="tel" name="Tel2" id="nom" placeholder="Ex:37501305" required="" />
+<input type="tel" name="Tel2" id="nom" placeholder="Ex:37501305" value="{{cvp.Tel2}}" required="" />
 <br />
 <br />
 <label for="pseudo">Adresse    :</label>
-<input type="text" name="Adresse" id="dom"  value="{{professeurs.Adresse}}" readonly/>
+<input type="text" name="Adresse" id="dom"  value="{{professeurs.Adresse}}" required=""/>
 <br />
 <br />
 <label for="pass">Email :</label>
-<input type="email" name="Email" id="Ment"  value="{{professeurs.Email}}" readonly/ >
+<input type="email" name="Email" id="Ment"  value="{{professeurs.Email}}" required=""/>
 <br />
 <br />
 <label for="pass">CIN/NIF   :</label>
-<input type="text" name="CIN" id="sem"  value="{{professeurs.CINP}}" readonly/>
+<input type="text" name="CIN" id="sem"  value="{{professeurs.CINP}}" required=""/>
 <br />
 <br />
 <TR>
 	<TD>Etat Civil</TD>
 	<TD>
 	<SELECT name="EtatC" required="">
+        <option>{{cvp.EtatC}}</option>
 	{% for etab in etat %}
 		<OPTION VALUE="{{etab}}">{{etab}}</OPTION>
 	{% endfor%}
@@ -61,31 +63,31 @@ enctype="multipart/form-data">
 <br />
 <br />
 <label for="pass">Experience Professionnelle   :</label>
-<input type="text" name="ExpP" id="nom" placeholder="Ex: Ingenieur" required="" />
+<input type="text" name="ExpP" id="nom" placeholder="Ex: Ingenieur" value="{{cvp.ExpP}}" required="" />
 <br />
 <br />
 <label for="pass">Date Experience   :</label>
-<input type="date" name="DateE" id="nom" placeholder="2012" required="" />
+<input type="date" name="DateE" id="nom" placeholder="2012" value="{{cvp.DateE}}" required="" />
 <br />
 <br />
 <label for="pseudo">Formation Academique    :</label>
-<input type="text" name="FormationA" id="dom" placeholder="Ex: Esih" required="" />
+<input type="text" name="FormationA" id="dom" placeholder="Ex: Esih"value="{{cvp.Tel2}}FormationA" required="" />
 <br />
 <br />
 <label for="pass">Date Formation :</label>
-<input type="date" name="DateF" id="Ment" placeholder="Ex: 2009" required="" />
+<input type="date" name="DateF" id="Ment" placeholder="Ex: 2009" value="{{cvp.DateF}}" required="" />
 <br />
 <br />
 <label for="pass">Specialite    :</label>
-<input type="text" name="Specialite" id="sem" placeholder="Ex: Reseuax" required="" />
+<input type="text" name="Specialite" id="sem" placeholder="Ex: Reseuax" value="{{cvp.Specialite}}" required="" />
 <br />
 <br />
 <label for="pass">Reference     :</label>
-<input type="text" name="Reference" id="nom" placeholder="Ex: Lys Junior" required="" />
+<input type="text" name="Reference" id="nom" placeholder="Ex: Lys Junior" value="{{cvp.Reference}}" required="" />
 <br />
 <br />
 <label for="pass">Langue   :</label>
-<input type="text" name="Langue" id="nom" placeholder="Ex: Creole" required="" />
+<input type="text" name="Langue" id="nom" placeholder="Ex: Creole"value="{{cvp.Langue}}" required="" />
 <br />
 <br />
     <TR>
@@ -93,7 +95,9 @@ enctype="multipart/form-data">
 	<INPUT type="submit" value="Valider">
 	</TD>
 </TR>
+<td><a href="/cvm/{{prof.id}}/"  class="link" title="Cliquer pour modifier au Cv du prof"></a></td>
 </TABLE>
+        </nav>
 </fieldset>
     </form>
 </body>

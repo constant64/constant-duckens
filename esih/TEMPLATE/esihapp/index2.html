@@ -5,49 +5,52 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 <title>{% block title %}Welcome to ESIH App{% endblock %}</title>
 </head>
-<body>
+<body id="">
 <div id="tout">
-<img src="{% static 'image/logo.jpg' %}" title="Esih" width="175" height="100">
+<!-- <img src="{% static 'image/logo.jpg' %}" title="Esih" width="200" height="200"> -->
+<center><img src="{% static 'image/logo_python3.png' %}" title="titre" width="800" height="180"></center>
 </div>
  <div id="toto">
-<h3 >{{tiko}} <a href="/logout/">Log out</a></h3>
+<h3 >Bienvenue... </h3>
 </div>
-
 <center><nav>
-{% ifequal admin.username "tiko" %}
 <ul id="menu">
     <li><a href="/../">Acceuil</a>
     </li>
     <li><a href="#">Inserer</a>
         <ul>
+            <li><a href="../codage/">Code Cours</a></li>
+            <li><a href="../programme/">Code Programme</a></li>
             <li><a href="../prof/">Professeur</a></li>
             <li><a href="../desc/">Description Cours</a></li>
         </ul>
     </li>
     <li><a href="#">Lister</a>
-            <ul>  
+            <ul>
+                <li><a href="../list/">Code Cours</a></li>
+                <li><a href="/../listp/">Code Programme</a></li>
                 <li><a href="../listprof/">Professeur</a></li>
                 <li><a href="commerce.php">Description Cours</a></li>
-            </ul>  
+            </ul>
     </li>
     <li><a href="#">Modifier</a>
-            <ul>  
+            <ul>
+                <li><a href="../modc/{{cours.id}}/">Code Cours</a></li>
+                <li><a href="../modp/">Code Programme</a></li>
                 <li><a href="#">Professeur</a></li>
                 <li><a href="#">Description Cours</a></li>
-            </ul>  
+            </ul>
         </li><li><a href="#">Suprimer</a>
-            <ul>  
+            <ul>
                 <li><a href="../list/">Code Cours</a></li>
                 <li><a href="../listp/">Code Programme</a></li>
                 <li><a href="../listprof/">Professeur</a></li>
                 <li><a href="#">Description Cours</a></li>
             </ul>
-        </li><li><a href="#">Contact</a>
+        </li><li><a href=/logout/">Log out</a>
         </li>
 </ul>
-
 </nav>
-    {% endifequal %}
 </center>
 
 <section id="content">
@@ -56,3 +59,5 @@
 
 </body>
 </html>
+
+

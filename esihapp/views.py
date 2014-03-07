@@ -252,28 +252,46 @@ def CVP (request, id):
         cvp.save()
         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
         return redirect("/../listprof/")
-
     except KeyError:
         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
         return render(request,'esihapp/cv.html',locals())
 
-# def CVP (request, id):
-#     if 'member_id' not in request.session:
-#         return redirect("/login/")
-#     try:
-#         professeurs = Professeurs.objects.get(id=id)
-#         cvp = CV ( DateN=request.POST['DateN'],professeurs=professeurs,
-#                    LieuN=request.POST['LieuN'],Tel2=request.POST['Tel2'],
-#                     EtatC=request.POST['EtatC'],ExpP=request.POST['ExpP'],
-#                     DateE=request.POST['DateE'],FormationA=request.POST['FormationA'],DateF=request.POST['DateF'],
-#                    Specialite=request.POST['Specialite'],Reference=request.POST['Reference'],Langue=request.POST['Langue'])
-#         cvp.save()
-#         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
-#         return redirect("/../listprof/")
-#
-#     except KeyError:
-#         etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
-#         return render(request,'esihapp/cv.html',locals())
+def CVPM (request, id):
+    if 'member_id' not in request.session:
+        return redirect("/login/")
+    try:
+        professeurs = Professeurs.objects.get(id=id)
+        cvp = CV.objects.get(id=id)
+        cvp.DateN=request.POST['DateN']
+        cvp.professeurs=professeurs
+        cvp.LieuN=request.POST['LieuN']
+        cvp.Tel2=request.POST['Tel2']
+        cvp.EtatC=request.POST['EtatC']
+        cvp.ExpP=request.POST['ExpP']
+        cvp.DateE=request.POST['DateE']
+        cvp.FormationA=request.POST['FormationA']
+        cvp.DateF=request.POST['DateF']
+        cvp.Specialite=request.POST['Specialite']
+        cvp.Reference=request.POST['Reference']
+        cvp.Langue=request.POST['Langue']
+        cvp.save()
+
+        etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
+        return redirect("/../listprof/")
+
+    except KeyError:
+        etat=["Marie","Celibataire","Fiance","Divorce","veuf"]
+        return render(request,'esihapp/cvm.html',locals())
+
+def CVPl (request):
+    try:
+        cvpl = CV.objects.all()
+        return render(request, 'esihapp/cv.html', locals())
+
+    except KeyError:
+        return render(request, 'esihapp/cv.html', locals())
+
+
 
 def listerprof(request):
     """fonction permettant de lister un cours"""
@@ -307,16 +325,22 @@ def ProfM(request, id):
         return render(request, 'esihapp/modprof.html', locals())
 
 def create(request):
-    if 'member_id' not in request.session:
-        return redirect("/login/")
-    user=admin(username=request.POST['username'],email=request.POST['email'],password=request.POST['password'])
-    user.save()
+    #if 'member_id' not in request.session:
+        #return redirect("/login/")
+    try:
+        user=admin(username=request.POST['username'],firstname=request.POST['firstname'],
+               lastname=request.POST['lastname'],email=request.POST['email'],password=request.POST['password'])
+        user.save()
+        return redirect('/login/')
+    except:
+        return render(request,'esihapp/register.html',locals())
 
 def login(request):
     try:
         try:
             log_in = admin.objects.get(username=request.POST['username'])
-            if log_in.password == request.POST['password']:
+            log_i = admin.objects.get(password=request.POST['password'])
+            if log_in.password == request.POST['password'] and log_i.username == request.POST['password']:
                 request.session['member_id'] = log_in.id
                 return redirect('/../')
             else:

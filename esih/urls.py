@@ -25,10 +25,12 @@ urlpatterns = patterns('esihapp.views',
     url(r'^nouvc/$','nouvc'),
     url(r'^nouvg/$','nouvg'),
     url(r'^cv/(\d+)/$','CVP'),
+    url(r'^cvm/(\d+)/$','CVPM'),
     url(r'^listprof/$','listerprof'),
     url(r'^modprof/(\d+)/$','ProfM'),
     url(r'^login/$','login'),
     url(r'^logout/$','logout'),
+    url(r'^create/$','create'),
     url(r'^listerdesc/$','listerdesc'),
 
 

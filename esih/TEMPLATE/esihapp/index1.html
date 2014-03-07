@@ -5,16 +5,15 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 <title>{% block title %}Welcome to ESIH App{% endblock %}</title>
 </head>
-<body>
+<body id="">
 <div id="tout">
-<img src="{% static 'image/logo.jpg' %}" title="Esih" width="175" height="100">
+<!-- <img src="{% static 'image/logo.jpg' %}" title="Esih" width="200" height="200"> -->
+<center><img src="{% static 'image/logo_python3.png' %}" title="titre" width="800" height="180"></center>
 </div>
  <div id="toto">
-<h3 >{{tiko}} <a href="/logout/">Log out</a></h3>
+<h3 >Bienvenue... {{admin.username}}</h3>
 </div>
-
 <center><nav>
-
 <ul id="menu">
     <li><a href="/../">Acceuil</a>
     </li>
@@ -48,12 +47,10 @@
                 <li><a href="../listprof/">Professeur</a></li>
                 <li><a href="#">Description Cours</a></li>
             </ul>
-        </li><li><a href="#">Contact</a>
+        </li><li><a href="/logout/">Log out</a>
         </li>
 </ul>
-
 </nav>
-
 </center>
 
 <section id="content">

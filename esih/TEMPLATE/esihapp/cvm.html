@@ -1,0 +1,159 @@
+{% extends "esihapp/index1.html" %}
+{% block title %}CV Professeur{% endblock %}
+{% block content %}
+<html>
+<head>
+
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+<form method="post" action=""
+enctype="multipart/form-data">
+<h3 id="news_h"></h3>
+
+
+<nav id="design_f">
+
+<fieldset>
+    <nav id="design_g">
+<legend>Creer un CV</legend>
+
+	<h3 ">Professeur: <label>{{professeurs}}</label></h3>
+	<input type="hidden" name="professeurs" value="{{professeurs}}">
+<table>
+<tr>
+<th><label for="pseudo">Nom    :</label></th>
+<td><input type="text" name="Nom" id="dom"  value="{{professeurs.NomProfesseur}}" readonly/></td>
+
+
+
+<th><label for="pass">Prenom :</label></th>
+<td><input type="text" name="Prenom" id="Ment" value="{{professeurs.PrenomProfesseur}}" readonly/></td>
+</tr>
+
+<tr>
+<th><label for="pass">Date de Naissance    :</label></th>
+<td><input type="date" name="DateN" id="sem" value="{{cvp.DateN}}" placeholder="Ex: 28/12/90" required="" /></td>
+
+
+
+<th><label for="pass">Lieu de Naissance    :</label></th>
+<td><input type="text" name="LieuN" id="nom"  placeholder="Ex: verrettes" value="{{cvp.LieuN}}" required="" /></td>
+</tr>
+
+<tr>
+<th><label for="pass">Tel1   :</label></th>
+<td><input type="tel" name="Tel1" id="nom"  value="{{professeurs.Tel}}" required=""/></td>
+
+
+
+<th><label for="pass">Tel2   :</label></th>
+<td><input type="tel" name="Tel2" id="nom" placeholder="Ex:37501305" value="{{cvp.Tel2}}" required=""/></td>
+</tr>
+
+<tr>
+<th><label for="pseudo">Adresse    :</label></th>
+<td><input type="text" name="Adresse" id="dom"  value="{{professeurs.Adresse}}" required=""/></td>
+
+
+
+<th><label for="pass">Email :</label></th>
+<td><input type="email" name="Email" id="Ment"  value="{{professeurs.Email}}" required="" ></td>
+</tr>
+
+<tr>
+<th><label for="pass">CIN/NIF   :</label></th>
+<td><input type="text" name="CIN" id="sem"  value="{{professeurs.CINP}}" required=""/></td>
+
+
+
+
+</nav>
+
+	<th>Etat Civil</th>
+	<TD>
+	<SELECT name="EtatC" required="">
+        <option>{{cvp.EtatC}}</option>
+	{% for etab in etat %}
+		<OPTION VALUE="{{etab}}">{{etab}}</OPTION>
+	{% endfor%}
+	</SELECT>
+	</TD>
+</TR>
+
+
+<tr>
+<th><label for="pass">Experience Professionnelle   :</label></th>
+<td><input type="text" name="ExpP"placeholder="Ex: Ingenieur" value="{{cvp.ExpP}}" required="" /></td>
+
+
+
+<th><label for="pass">Date Experience   :</label></th>
+<td><input type="date" name="DateE" id="nom" placeholder="2012" value="{{cvp.DateE}}" required=""/></td>
+</tr>
+
+<tr>
+<th><label for="pseudo">Formation Academique    :</label></th>
+<td><input type="text" name="FormationA" id="dom" value="{{cvp.FormationA}}" required=""  /></td>
+
+
+
+<th><label for="pass">Date Formation :</label></th>
+<td><input type="date" name="DateF" id="Ment" value="{{cvp.DateF}}" required=""  /></td>
+</tr>
+
+<tr>
+<th><label for="pass">Specialite    :</label></th>
+<td><input type="text" name="Specialite" id="sem" value="{{cvp.Specialite}}" required=""  /></td>
+
+
+
+<th><label for="pass">Reference     :</label></th>
+<td><input type="text" name="Reference" id="nom" placeholder="Ex:" value="{{cvp.Reference}}" required="" /></td>
+</tr>
+
+<tr>
+<th><label for="pass">Langue   :</label></th>
+<td><input type="text" name="Langue" id="nom" placeholder="Ex:" value="{{cvp.Langue}}" required="" /></td>
+</tr>
+
+</br>
+<TR>
+
+	<th COLSPAN=10>
+	<INPUT type="submit" value="Valider">
+	</th>
+</TR>
+</table>
+</br>
+</fieldset>
+
+<fieldset>
+
+</fieldset>
+    </nav>
+
+    </form>
+</body>
+{% endblock %}
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

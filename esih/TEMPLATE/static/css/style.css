@@ -1,5 +1,27 @@
 {% load staticfiles %}
 
+@font-face
+{
+font-family: 'BallparkWeiner';
+src: url('polices/ballpark.eot');
+src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+url('polices/ballpark.woff') format('woff'),
+url('polices/ballpark.ttf') format('truetype'),
+url('polices/ballpark.svg#BallparkWeiner') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face
+{
+font-family: 'Dayrom';
+src: url('polices/dayrom.eot');
+src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+url('polices/dayrom.woff') format('woff'),
+url('polices/dayrom.ttf') format('truetype'),
+url('polices/dayrom.svg#Dayrom') format('svg');
+font-weight: normal;
+font-style: normal;
+}
 /* Common
 body {
 	background:#eaeaea url(bg.png) repeat;
@@ -12,6 +34,61 @@ text-decoration:normal;
 	color:#aaa;
 }
 */
+#news_h
+{
+color: gray;
+}
+
+table
+{
+
+color: yellow;
+}
+
+body
+{
+background: url('../image/yeah.png');
+}
+
+#design_g
+{
+  background-color: gray;
+  /*background: url('../image/paj2.png');*/
+  /*position: absolue;
+  right: 0px;
+  top: 0px;*/
+  /*border: 2px solid white;*/
+  /*vertical-align: justify;*/
+  /*text-align: justify;*/
+  float: left;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 1140px;
+  color: yellow;
+  display: inline-block
+}
+
+#design_f
+{
+  background-color: gray;
+  /*background: url('../image/paj2.png');*/
+  /*position: absolue;
+  right: 0px;
+  top: 0px;*/
+  /*border: 2px solid white;*/
+  /*vertical-align: justify;*/
+  /*text-align: justify;*/
+  float: left;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 1140px;
+  color: yellow;
+  display: inline-block
+}
 
 body {
     margin: auto;
@@ -19,7 +96,7 @@ body {
     font-size: 12px;
     font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
     color: #333;
-    background: #fff;
+
     width:1150px;
 }
 
@@ -29,67 +106,68 @@ body {
 {
 
 display:inline-block;
-color: #F90;
+
+color: yellow;
 text-decoration:none;
 font-size:1.5em;
 text-align:center;
 font-family:"Arial", serif;
-}  
-#menu > li,  
-#menu > li li {  
+}
+#menu > li,
+#menu > li li {
     position: relative;
     display:inline-block;
     width: 110px;
     padding: 10px 15px;
-    background-color: #777;  
+    background-color: #777;
     background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 	background-image: -ms-linear-gradient(#aaa, #888 50%, #777 50%,#999);
-}  
+}
 #menu > li li { background: transparent none; }
 #menu > li li a { color: #444; }
-#menu > li li:hover { background:#eee; }  
-#menu > li:first-child {  
+#menu > li li:hover { background:#eee; }
+#menu > li:first-child {
     border-right: 1px solid #777;
-    border-radius: 8px 0 0 8px;  
-}  
+    border-radius: 8px 0 0 8px;
+}
 #menu > li + li {
     border-left: 1px solid #aaa;
     border-right: 1px solid #777;
-}  
-#menu > li:last-child {  
+}
+#menu > li:last-child {
     border-right:0px ;
-    border-left: 1px solid #aaa;  
-    border-radius: 0 8px 8px 0 ;  
-}  
-#menu > li:hover {  
-    background-color: #999;  
-    background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);  
-	background-image: -ms-linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb); 
-}  
-/* (presque) fin de la partie positionnement/déco */  
+    border-left: 1px solid #aaa;
+    border-radius: 0 8px 8px 0 ;
+}
+#menu > li:hover {
+    background-color: #999;
+    background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+	background-image: -ms-linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+}
+/* (presque) fin de la partie positionnement/déco */
 /* deroulante lan */
-#menu ul {  
-    position: absolute;  
+#menu ul {
+    position: absolute;
     top: 2em; left:0;
     max-height:0em;
     margin:0; padding:0;
-    background-color:#ddd;  
-    background-image: linear-gradient(#fff,#ddd);  
+    background-color:#ddd;
+    background-image: linear-gradient(#fff,#ddd);
 	background-image: -ms-plinear-gradient(#fff,#ddd);
-    overflow:hidden;  
+    overflow:hidden;
     transition: 1s max-height 0.3s;
-    border-radius: 0 0 8px 8px; 
+    border-radius: 0 0 8px 8px;
 
-}  
+}
 
-/* ici on change la valeur de max-height au :hover */  
-#menu > li:hover ul {  
-    /* need an adaptation, lower is better, but see it large   */  
+/* ici on change la valeur de max-height au :hover */
+#menu > li:hover ul {
+    /* need an adaptation, lower is better, but see it large   */
     max-height:13em;
-} 
+}
 
-	
-figure { 
+
+figure {
 	display: inline-block;
 }
 
@@ -123,15 +201,16 @@ margin-top:0px;
 left:137px;
 }
 
-
-
 #tout  /*boite noir*/
 {
-border:1px solid #eaeaea;
+border:1px solid ;
 width:1150px;
-height:100px;
+height:200px;
 margin:auto;
-background: #417690;
+/*background: #417690;*/
+background: gray;
+border-radius: 20px;
+box-shadow: 0px 6px 6px #1c1a19;
 }
 
 #toto{
@@ -162,10 +241,5 @@ color:white;
     padding-left: 12px;
 
     background: url(../image/p11.png) 0 .25em no-repeat;
-}
-.dlink {
-    padding-left: 12px;
-
-    background: url(../image/p3.png) 0 .25em no-repeat;
 }
 

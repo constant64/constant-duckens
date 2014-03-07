@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216ee206-3d04-4a50-a9dc-f96a26a578e2" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\vip\django\esih\TEMPLATE\esihapp\administrateur2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vip\django\esih\TEMPLATE\static\css\style2.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/Programme.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/Programme.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/cv.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/cv.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/enregistrement.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/enregistrement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/form.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/index1.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/index1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/index2.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/list.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listp.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listprof.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listprof.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/modc.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/modc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvc.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvg.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvi.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/prof.html" afterPath="$PROJECT_DIR$/esih/TEMPLATE/esihapp/prof.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/TEMPLATE/static/css/style.css" afterPath="$PROJECT_DIR$/esih/TEMPLATE/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esih/urls.py" afterPath="$PROJECT_DIR$/esih/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/esihapp/views.py" afterPath="$PROJECT_DIR$/esihapp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,19 +46,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/esihapp/models.py">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esihapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="32" selection-start="2784" selection-end="2784" vertical-scroll-proportion="-5.6" vertical-offset="1203" max-vertical-offset="1768">
-              <folding />
+            <state line="283" column="42" selection-start="12201" selection-end="12201" vertical-scroll-proportion="-15.4" vertical-offset="4426" max-vertical-offset="6732">
+              <folding>
+                <element signature="e#23#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/esih/urls.py">
+      <file leaf-file-name="desc.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="2" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-13.08" vertical-offset="115" max-vertical-offset="680">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.2692307" vertical-offset="33" max-vertical-offset="2142">
               <folding />
             </state>
           </provider>
@@ -47,28 +69,47 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esih/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="2535" selection-end="2535" vertical-scroll-proportion="-5.28" vertical-offset="1568" max-vertical-offset="2108">
+            <state line="99" column="48" selection-start="2534" selection-end="2534" vertical-scroll-proportion="-6.36" vertical-offset="1524" max-vertical-offset="2108">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wsgi.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/esih/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="-12.92" vertical-offset="0" max-vertical-offset="425">
+            <state line="19" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.59814817" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/esihapp/views.py">
+      <file leaf-file-name="listerdesc.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="30" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.55218214" vertical-offset="729" max-vertical-offset="6324">
+            <state line="68" column="8" selection-start="2363" selection-end="2363" vertical-scroll-proportion="-18.923077" vertical-offset="664" max-vertical-offset="1360">
               <folding>
-                <element signature="e#23#68#0" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#table#0;n#fieldset#1;n#form#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#table#0;n#fieldset#1;n#form#0;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esih/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="29" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-12.4" vertical-offset="115" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="207" column="8" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.0" vertical-offset="3260" max-vertical-offset="4267">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,16 +117,7 @@
       <file leaf-file-name="index1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index2.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/index2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+            <state line="5" column="65" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -110,22 +142,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvc.html" />
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvi.html" />
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/prof.html" />
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/enregistrement.html" />
         <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/list.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listp.html" />
         <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listprof.html" />
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/form.html" />
-        <option value="$PROJECT_DIR$/esih/urls.py" />
-        <option value="$PROJECT_DIR$/esihapp/models.py" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/cv.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/modc.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/cvm.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/Programme.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/index2.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvc.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvg.html" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvi.html" />
         <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/index1.html" />
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html" />
-        <option value="$PROJECT_DIR$/esih/TEMPLATE/static/css/style.css" />
+        <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/enregistrement.html" />
         <option value="$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html" />
-        <option value="$PROJECT_DIR$/esih/wsgi.py" />
         <option value="$PROJECT_DIR$/esih/settings.py" />
-        <option value="$PROJECT_DIR$/esihapp/views.py" />
+        <option value="$PROJECT_DIR$/esih/wsgi.py" />
       </list>
     </option>
   </component>
@@ -180,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,10 +276,61 @@
               <option name="myItemId" value="TEMPLATE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="esih" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TEMPLATE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="esih" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TEMPLATE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="esihapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,7 +522,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07640068" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
@@ -459,6 +543,25 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07640068" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18673648" sideWeight="0.5003723" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282572" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1816828" sideWeight="0.67005074" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -474,101 +577,120 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/list.html">
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/prof.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="292" selection-end="292" vertical-scroll-proportion="0.20408164" vertical-offset="94" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="410" selection-end="410" vertical-scroll-proportion="-1.8775511" vertical-offset="1352" max-vertical-offset="2108" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="8" selection-start="961" selection-end="961" vertical-scroll-proportion="1.0342206" vertical-offset="0" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/modc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/enregistrement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1700" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="542" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/formerno.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/form2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/esihapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="32" selection-start="2784" selection-end="2784" vertical-scroll-proportion="-5.6" vertical-offset="1203" max-vertical-offset="1768">
+        <state line="10" column="0" selection-start="234" selection-end="253" vertical-scroll-proportion="0.3153989" vertical-offset="0" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/Programme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+        <state line="78" column="6" selection-start="1601" selection-end="1601" vertical-scroll-proportion="2.4601114" vertical-offset="0" max-vertical-offset="1836">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/esih/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/cvm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="-12.92" vertical-offset="0" max-vertical-offset="425">
+        <state line="136" column="10" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.34508348" vertical-offset="2126" max-vertical-offset="2805">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/esih/settings.py">
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="2535" selection-end="2535" vertical-scroll-proportion="-5.28" vertical-offset="1568" max-vertical-offset="2108">
+        <state line="24" column="14" selection-start="509" selection-end="509" vertical-scroll-proportion="0.716141" vertical-offset="22" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="2" selection-start="501" selection-end="501" vertical-scroll-proportion="0.75695735" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/nouvi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="539" selection-end="539" vertical-scroll-proportion="0.72541744" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="17" selection-start="1836" selection-end="1836" vertical-scroll-proportion="1.5139147" vertical-offset="0" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/enregistrement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="212" selection-end="212" vertical-scroll-proportion="0.15769945" vertical-offset="0" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="65" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="8" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.0" vertical-offset="3260" max-vertical-offset="4267">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/esih/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="2" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-13.08" vertical-offset="115" max-vertical-offset="680">
+        <state line="27" column="29" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-12.4" vertical-offset="115" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/esihapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="30" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.55218214" vertical-offset="729" max-vertical-offset="6324">
+        <state line="283" column="42" selection-start="12201" selection-end="12201" vertical-scroll-proportion="-15.4" vertical-offset="4426" max-vertical-offset="6732">
           <folding>
             <element signature="e#23#68#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/listerdesc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="8" selection-start="2363" selection-end="2363" vertical-scroll-proportion="-18.923077" vertical-offset="664" max-vertical-offset="1360">
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#table#0;n#fieldset#1;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#fieldset#1;n#form#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/TEMPLATE/esihapp/desc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.2692307" vertical-offset="33" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="48" selection-start="2534" selection-end="2534" vertical-scroll-proportion="-6.36" vertical-offset="1524" max-vertical-offset="2108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esih/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.59814817" vertical-offset="0" max-vertical-offset="540">
+          <folding />
         </state>
       </provider>
     </entry>
